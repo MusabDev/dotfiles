@@ -18,8 +18,6 @@ return {
     },
   },
   config = function()
-    -- [[ Configure Telescope ]]
-    -- See `:help telescope` and `:help telescope.setup()`
     require('telescope').setup {
       defaults = {
         mappings = {
@@ -27,6 +25,16 @@ return {
             ['<C-u>'] = false,
             ['<C-d>'] = false,
           },
+        },
+        file_ignore_patterns = {
+          'node_modules',
+          '.git',
+          'vendor',
+        },
+      },
+      pickers = {
+        find_files = {
+          hidden = true,
         },
       },
     }
