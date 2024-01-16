@@ -4,7 +4,8 @@ import = [
   # "~/.config/alacritty/catppuccin/catppuccin-macchiato.toml"
   # "~/.config/alacritty/catppuccin/catppuccin-frappe.toml"
   # "~/.config/alacritty/catppuccin/catppuccin-latte.toml"
-  "~/.config/alacritty/rose-pine/rose-pine.toml"
+  # "~/.config/alacritty/rose-pine/rose-pine.toml"
+  "~/.config/alacritty/zenbones/duckbones.toml"
 ]
 
 [env]
@@ -17,9 +18,15 @@ size = 16
 family = "FiraCode Nerd Font"
 
 [window]
-opacity = 0.92
+opacity = 1 # 0.92
 startup_mode = "SimpleFullscreen"
 
-[window.padding]
-x = 10
-y = 10
+# [window.padding]
+# x = 10
+# y = 10
+
+# [colors.primary]
+# background = "#0e0a00" # good fit with rose-pine
+
+[colors.primary]
+background = "#0e101a" # good fit with catppuccin
