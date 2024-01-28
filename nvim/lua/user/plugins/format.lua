@@ -21,20 +21,21 @@ return {
         lua = { 'stylua' },
         python = { 'isort', 'black' },
         toml = { 'prettierd' },
-        php = { 'php-cs-fixer' }
+        php = { 'php-cs-fixer' },
       },
       format_on_save = {
         lsp_fallback = true,
         async = false,
         timeout_ms = 1000,
       },
+      lsp_fallback = true,
+      async = true,
     }
 
     vim.keymap.set({ 'n', 'v' }, '<leader>mp', function()
       conform.format {
         lsp_fallback = true,
-        async = false,
-        timeout_ms = 1000,
+        async = true,
       }
     end, { desc = 'Format file or range (in visual mode)' })
   end,

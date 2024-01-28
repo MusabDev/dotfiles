@@ -5,7 +5,7 @@ import = [
   # "~/.config/alacritty/catppuccin/catppuccin-frappe.toml"
   # "~/.config/alacritty/catppuccin/catppuccin-latte.toml"
   # "~/.config/alacritty/rose-pine/rose-pine.toml"
-  "~/.config/alacritty/zenbones/duckbones.toml"
+  # "~/.config/alacritty/zenbones/duckbones.toml"
 ]
 
 [env]
@@ -18,15 +18,40 @@ size = 16
 family = "FiraCode Nerd Font"
 
 [window]
-opacity = 1 # 0.92
+opacity = 0.92
 startup_mode = "SimpleFullscreen"
 
-# [window.padding]
-# x = 10
-# y = 10
+[window.padding]
+x = 10
+y = 10
 
 # [colors.primary]
 # background = "#0e0a00" # good fit with rose-pine
 
+# [colors.primary]
+# background = "#0e101a" # good fit with catppuccin
+
+# Gruvbox material hard dark
+[colors.bright]
+black = "0x32302f"
+blue = "0x7daea3"
+cyan = "0x89b482"
+green = "0xa9b665"
+magenta = "0xd3869b"
+red = "0xea6962"
+white = "0xd4be98"
+yellow = "0xd8a657"
+
+[colors.normal]
+black = "0x32302f"
+blue = "0x7daea3"
+cyan = "0x89b482"
+green = "0xa9b665"
+magenta = "0xd3869b"
+red = "0xea6962"
+white = "0xd4be98"
+yellow = "0xd8a657"
+
 [colors.primary]
-background = "#0e101a" # good fit with catppuccin
+background = "0x1d2021"
+foreground = "0xd4be98"

@@ -33,6 +33,8 @@ return {
       nmap('<leader>rn', vim.lsp.buf.rename, '[R]e[n]ame')
       nmap('<leader>ca', vim.lsp.buf.code_action, '[C]ode [A]ction')
 
+      nmap('<leader>e', vim.lsp.diagnostic.open_float(), 'Show full error in float.')
+
       nmap('gd', require('telescope.builtin').lsp_definitions, '[G]oto [D]efinition')
       nmap('gr', require('telescope.builtin').lsp_references, '[G]oto [R]eferences')
       nmap('gI', require('telescope.builtin').lsp_implementations, '[G]oto [I]mplementation')
@@ -63,7 +65,7 @@ return {
       ['<leader>c'] = { name = '[C]ode', _ = 'which_key_ignore' },
       ['<leader>d'] = { name = '[D]ocument', _ = 'which_key_ignore' },
       ['<leader>g'] = { name = '[G]it', _ = 'which_key_ignore' },
-      ['<leader>h'] = { name = 'Git [H]unk', _ = 'which_key_ignore' },
+      ['<leader>u'] = { name = 'Git [H]unk', _ = 'which_key_ignore' },
       ['<leader>r'] = { name = '[R]ename', _ = 'which_key_ignore' },
       ['<leader>s'] = { name = '[S]earch', _ = 'which_key_ignore' },
       ['<leader>t'] = { name = '[T]oggle', _ = 'which_key_ignore' },
@@ -73,7 +75,7 @@ return {
     -- required for visual <leader>hs (hunk stage) to work
     require('which-key').register({
       ['<leader>'] = { name = 'VISUAL <leader>' },
-      ['<leader>h'] = { 'Git [H]unk' },
+      ['<leader>u'] = { 'Git [H]unk' },
     }, { mode = 'v' })
 
     -- mason-lspconfig requires that these setup functions are called in this order
