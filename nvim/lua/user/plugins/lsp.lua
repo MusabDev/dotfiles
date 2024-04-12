@@ -35,7 +35,7 @@ return {
 
       nmap('<leader>e', vim.lsp.diagnostic.open_float(), 'Show full error in float.')
 
-      nmap('gd', require('telescope.builtin').lsp_definitions, '[G]oto [D]efinition')
+      nmap('gd', '[G]oto [D]efinition', require('telescope.builtin').lsp_definitions)
       nmap('gr', require('telescope.builtin').lsp_references, '[G]oto [R]eferences')
       nmap('gI', require('telescope.builtin').lsp_implementations, '[G]oto [I]mplementation')
       nmap('<leader>D', require('telescope.builtin').lsp_type_definitions, 'Type [D]efinition')

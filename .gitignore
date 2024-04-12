@@ -1,3 +1,5 @@
 linearmouse
 .DS_Store
-lazy-lock.json
+sanity/
+simple-update-notifier/
+zed/
