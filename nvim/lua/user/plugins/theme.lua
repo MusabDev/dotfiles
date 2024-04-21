@@ -18,6 +18,10 @@ return {
       require('rose-pine').setup {
         styles = {
           transparency = true,
+          disable_background = true,
+          styles = {
+            italic = false,
+          },
         },
       }
     end,
@@ -45,6 +49,18 @@ return {
     config = function()
       vim.g.gruvbox_material_foreground = 'material'
       vim.g.gruvbox_material_background = 'hard'
+    end,
+  },
+
+  {
+    'AlexvZyl/nordic.nvim',
+    name = 'nordic',
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require('nordic').setup {
+        transparent_bg = true,
+      }
     end,
   },
 }
