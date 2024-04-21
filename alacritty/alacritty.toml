@@ -19,7 +19,7 @@ size = 16
 family = "FiraCode Nerd Font"
 
 [window]
-opacity = 0.87
+opacity = 0.95 # 0.87
 blur = false
 startup_mode = "SimpleFullscreen"
 
