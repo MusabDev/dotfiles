@@ -12,6 +12,9 @@ vim.o.hlsearch = false
 vim.o.tabstop = 2
 vim.o.shiftwidth = 2
 
+-- Scroll
+vim.o.scrolloff = 10
+
 -- Set no wrap
 vim.o.wrap = false
 
