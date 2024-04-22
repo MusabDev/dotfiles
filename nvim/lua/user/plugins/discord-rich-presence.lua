@@ -16,8 +16,7 @@ return {
     event = 'VeryLazy',
     config = function()
       require('neocord').setup {
-        main_image = 'logo',
-        logo = 'https://www.vim.org/images/vim_4star.gif',
+        logo = 'https://avatars.githubusercontent.com/u/6471485',
       }
     end,
   },
