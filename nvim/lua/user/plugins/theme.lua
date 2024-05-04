@@ -130,6 +130,16 @@ return {
         commentStyle = { italic = false },
         keywordStyle = { italic = false },
         statementStyle = { bold = false },
+
+        colors = {
+          theme = {
+            all = {
+              ui = {
+                bg_gutter = 'none',
+              },
+            },
+          },
+        },
       }
     end,
   },
