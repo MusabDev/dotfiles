@@ -33,7 +33,7 @@ return {
       nmap('<leader>rn', vim.lsp.buf.rename, '[R]e[n]ame')
       nmap('<leader>ca', vim.lsp.buf.code_action, '[C]ode [A]ction')
 
-      nmap('<leader>e', vim.lsp.diagnostic.open_float(), 'Show full error in float.')
+      nmap('<leader>e', vim.diagnostic.open_float(), 'Show full error in float.')
 
       nmap('gd', '[G]oto [D]efinition', require('telescope.builtin').lsp_definitions)
       nmap('gr', require('telescope.builtin').lsp_references, '[G]oto [R]eferences')
