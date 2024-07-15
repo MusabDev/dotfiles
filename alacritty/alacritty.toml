@@ -31,5 +31,5 @@ startup_mode = "SimpleFullscreen"
 x = 10
 y = 10
 
-# [colors.primary]
-# background = "#0a0a0a"
+[colors.primary]
+background = "#0a0a0a"

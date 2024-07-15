@@ -115,6 +115,8 @@ return {
           -- diagnostics = { disable = { 'missing-fields' } },
         },
       },
+
+      angularls = {},
     }
 
     -- Setup neovim lua configuration
