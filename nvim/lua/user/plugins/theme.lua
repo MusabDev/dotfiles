@@ -5,7 +5,7 @@ return {
     priority = 1000,
     config = function()
       require('catppuccin').setup {
-        transparent_background = true,
+        -- transparent_background = true,
         no_italic = true,
         no_bold = true,
       }
@@ -19,15 +19,14 @@ return {
     config = function()
       require('rose-pine').setup {
         variant = 'auto', -- auto, main, moon, or dawn
-        dark_variant = 'main', -- main, moon, or dawn
+        dark_variant = 'moon', -- main, moon, or dawn
         dim_inactive_windows = true,
 
         styles = {
           transparency = true,
-          disable_background = true,
-          styles = {
-            italic = false,
-          },
+
+          italic = false,
+          bold = false,
         },
       }
     end,
@@ -41,11 +40,44 @@ return {
     opts = {},
     config = function()
       require('tokyonight').setup {
-        style = 'night',
+        style = 'moon',
         transparent = false,
         terminal_colors = true,
         dim_inactive = true,
       }
     end,
+  },
+
+  {
+    'cdmill/neomodern.nvim',
+    name = 'neomodern',
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require('neomodern').setup {
+        transparent = false,
+        style = 'roseprime',
+      }
+      require('neomodern').load()
+    end,
+  },
+
+  {
+    'vague2k/vague.nvim',
+    name = 'vague',
+    config = function()
+      require('vague').setup {
+        transparent = false,
+        colors = {
+        }
+      }
+    end,
+  },
+
+  {
+    'fcancelinha/nordern.nvim',
+    branch = 'master',
+    priority = 1000,
+    config = function() end,
   },
 }

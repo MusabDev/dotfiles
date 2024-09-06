@@ -23,11 +23,11 @@ return {
         toml = { 'prettierd' },
         php = { 'php-cs-fixer' },
       },
-      format_on_save = {
-        lsp_fallback = true,
-        async = false,
-        timeout_ms = 1000,
-      },
+      -- format_on_save = {
+      --   lsp_fallback = true,
+      --   async = false,
+      --   timeout_ms = 1000,
+      -- },
       lsp_fallback = true,
       async = true,
     }

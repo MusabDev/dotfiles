@@ -10,14 +10,14 @@ return {
   --   end,
   -- },
 
-  {
-    'IogaMaster/neocord',
-    name = 'neocord',
-    event = 'VeryLazy',
-    config = function()
-      require('neocord').setup {
-        logo = 'https://avatars.githubusercontent.com/u/6471485',
-      }
-    end,
-  },
+  -- {
+  --   'IogaMaster/neocord',
+  --   name = 'neocord',
+  --   event = 'VeryLazy',
+  --   config = function()
+  --     require('neocord').setup {
+  --       logo = 'https://avatars.githubusercontent.com/u/6471485',
+  --     }
+  --   end,
+  -- },
 }

@@ -4,14 +4,16 @@ import = [
   # "~/.config/alacritty/catppuccin/catppuccin-macchiato.toml"
   # "~/.config/alacritty/catppuccin/catppuccin-frappe.toml"
   # "~/.config/alacritty/catppuccin/catppuccin-latte.toml"
-  "~/.config/alacritty/rose-pine/rose-pine.toml"
+  "~/.config/alacritty/rose-pinerrose-pine-moon.toml"
+  # "~/.config/alacritty/rose-pinerrose-pine.toml"
+  # "~/.config/alacritty/roseprime.toml"
   # "~/.config/alacritty/zenbones/duckbones.toml"
   # "~/.config/alacritty/tokyonight/tokyonight_night.toml"
   # "~/.config/alacritty/kanagawa/kanagawa_dragon.toml"
 ]
 
 [env]
-TERM = "xterm-256color"
+TERM = "screen-256color"
 
 [font]
 size = 16
@@ -24,12 +26,11 @@ family = "FiraCode Nerd Font"
 
 [window]
 opacity = 0.87
-blur = false
 startup_mode = "SimpleFullscreen"
 
-[window.padding]
-x = 10
-y = 10
+# [window.padding]
+# x = 10
+# y = 10
 
 [colors.primary]
 background = "#0a0a0a"
