@@ -1,6 +1,6 @@
 import = [
   # uncomment the flavour you want below:
-  "~/.config/alacritty/catppuccin/catppuccin-mocha.toml"
+  # "~/.config/alacritty/catppuccin/catppuccin-mocha.toml"
   # "~/.config/alacritty/catppuccin/catppuccin-macchiato.toml"
   # "~/.config/alacritty/catppuccin/catppuccin-frappe.toml"
   # "~/.config/alacritty/catppuccin/catppuccin-latte.toml"
@@ -9,7 +9,7 @@ import = [
   # "~/.config/alacritty/roseprime.toml"
   # "~/.config/alacritty/zenbones/duckbones.toml"
   # "~/.config/alacritty/tokyonight/tokyonight_night.toml"
-  # "~/.config/alacritty/kanagawa/kanagawa_dragon.toml"
+  "~/.config/alacritty/kanagawa/kanagawa_dragon.toml"
 ]
 
 [env]
@@ -24,9 +24,9 @@ family = "FiraCode Nerd Font"
 # family = "JetBrainsMono Nerd Font"
 # family = "BlexMono Nerd Font"
 
-[window]
-# opacity = 0.87d
-startup_mode = "SimpleFullscreen"
+# [window]
+# opacity = 0.87
+# startup_mode = "SimpleFullscreen"
 
 # [window.padding]
 # x = 10

@@ -84,4 +84,11 @@ return {
     priority = 1000,
     config = function() end,
   },
+
+  {
+    -- darkvoid: "aliqyan-21/darkvoid.nvim",
+    -- kanagawa: "rebelot/kanagawa.nvim"
+    'rebelot/kanagawa.nvim',
+    priority = 1000,
+  },
 }
