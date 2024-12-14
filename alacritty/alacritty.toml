@@ -1,10 +1,10 @@
 import = [
   # uncomment the flavour you want below:
-  # "~/.config/alacritty/catppuccin/catppuccin-mocha.toml"
+  "~/.config/alacritty/catppuccin/catppuccin-mocha.toml"
   # "~/.config/alacritty/catppuccin/catppuccin-macchiato.toml"
   # "~/.config/alacritty/catppuccin/catppuccin-frappe.toml"
   # "~/.config/alacritty/catppuccin/catppuccin-latte.toml"
-  "~/.config/alacritty/rose-pine/rose-pine-moon.toml"
+  # "~/.config/alacritty/rose-pine/rose-pine-moon.toml"
   # "~/.config/alacritty/rose-pine/rose-pine.toml"
   # "~/.config/alacritty/roseprime.toml"
   # "~/.config/alacritty/zenbones/duckbones.toml"
@@ -32,5 +32,5 @@ startup_mode = "SimpleFullscreen"
 # x = 10
 # y = 10
 
-[colors.primary]
-background = "#0a0a0a"
+# [colors.primary]
+# background = "#0a0a0a"

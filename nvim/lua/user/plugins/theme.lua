@@ -8,6 +8,11 @@ return {
         -- transparent_background = true,
         no_italic = true,
         no_bold = true,
+        dim_inactive = {
+          enabled = true,
+          shade = 'light',
+          percentage = 0.60,
+        },
       }
     end,
   },
@@ -68,8 +73,7 @@ return {
     config = function()
       require('vague').setup {
         transparent = false,
-        colors = {
-        }
+        colors = {},
       }
     end,
   },
