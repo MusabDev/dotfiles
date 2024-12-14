@@ -24,8 +24,9 @@ family = "FiraCode Nerd Font"
 # family = "JetBrainsMono Nerd Font"
 # family = "BlexMono Nerd Font"
 
-# [window]
-# opacity = 0.87
+[window]
+opacity = 0.87
+blur = true 
 # startup_mode = "SimpleFullscreen"
 
 # [window.padding]
