@@ -16,7 +16,7 @@ import = [
 TERM = "xterm-256color"
 
 [font]
-size = 16
+size = 14
 
 [font.normal]
 family = "FiraCode Nerd Font"
@@ -24,14 +24,14 @@ family = "FiraCode Nerd Font"
 # family = "JetBrainsMono Nerd Font"
 # family = "BlexMono Nerd Font"
 
-[window]
-opacity = 0.87
-blur = true 
+# # [window]
+# opacity = 0.90
+# blur = true 
 # startup_mode = "SimpleFullscreen"
 
 # [window.padding]
-# x = 10
-# y = 10
+# x = 7
+# y = 7
 
 # [colors.primary]
 # background = "#0a0a0a"
