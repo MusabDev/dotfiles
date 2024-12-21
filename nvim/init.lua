@@ -157,6 +157,12 @@ vim.opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
 
+-- It will make the cursor block all the time
+vim.o.guicursor = ''
+
+-- Set no text wrap
+vim.o.wrap = false
+
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
@@ -804,7 +810,7 @@ require('lazy').setup({
           -- Accept ([y]es) the completion.
           --  This will auto-import if your LSP supports it.
           --  This will expand snippets if the LSP sent a snippet.
-          ['<C-y>'] = cmp.mapping.confirm { select = true },
+          ['<Enter>'] = cmp.mapping.confirm { select = true },
 
           -- If you prefer more traditional completion keymaps,
           -- you can uncomment the following lines
@@ -876,6 +882,9 @@ require('lazy').setup({
     config = function ()
       require('kanagawa').setup {
         transparent = false,
+        colors = {
+          theme = { all = { ui = { bg_gutter = 'none' }  }} -- Remove gutter background, linebar's background
+        }
       }
     end,
   },
@@ -938,6 +947,24 @@ require('lazy').setup({
       },
       indent = { enable = true, disable = { 'ruby' } },
     },
+    { -- Supermaven for copilot
+      "supermaven-inc/supermaven-nvim",
+      config = function()
+        require("supermaven-nvim").setup({
+        })
+      end,
+    },
+
+    { -- Harpoon
+      'ThePrimeagen/harpoon',
+      config = function()
+        vim.keymap.set('n', '<leader>h', require('harpoon.ui').toggle_quick_menu, { desc = 'Toggle Harpoon quick menu' })
+        vim.keymap.set('n', '<leader>hm', require('harpoon.mark').add_file, { desc = 'Add current file to Harpoon' })
+        vim.keymap.set('n', '<leader>hn', require('harpoon.ui').nav_next, { desc = 'Navigate to next file in Harpoon' })
+        vim.keymap.set('n', '<leader>hp', require('harpoon.ui').nav_prev, { desc = 'Navigate to previous file in Harpoon' })
+      end,
+    },
+
     -- There are additional nvim-treesitter modules that you can use to interact
     -- with nvim-treesitter. You should go explore a few and see what interests you:
     --
