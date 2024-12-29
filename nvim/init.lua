@@ -163,6 +163,10 @@ vim.o.guicursor = ''
 -- Set no text wrap
 vim.o.wrap = false
 
+-- Set tab width
+-- vim.o.shiftwidth = 4
+-- vim.o.tabstop = 4
+
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
@@ -954,7 +958,9 @@ require('lazy').setup({
         })
       end,
     },
-
+    -- {
+    --   'github/copilot.vim',
+    -- },
     { -- Harpoon
       'ThePrimeagen/harpoon',
       config = function()

@@ -1,0 +1,12 @@
+font-family = "JetBrainsMono Nerd Font"
+font-size = 14
+
+window-title-font-family = "JetBrainsMono Nerd Font"
+
+shell-integration-features = no-cursor
+cursor-style = "block"
+cursor-style-blink = false
+
+theme = "Kanagawa Dragon"
+window-theme = "auto"
+window-save-state = false
