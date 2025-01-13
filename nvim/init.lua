@@ -145,7 +145,7 @@ vim.opt.splitbelow = true
 -- Sets how neovim will display certain whitespace characters in the editor.
 --  See `:help 'list'`
 --  and `:help 'listchars'`
-vim.opt.list = true
+vim.opt.list = false
 vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 
 -- Preview substitutions live, as you type!
@@ -164,8 +164,8 @@ vim.o.guicursor = ''
 vim.o.wrap = false
 
 -- Set tab width
--- vim.o.shiftwidth = 4
--- vim.o.tabstop = 4
+vim.o.shiftwidth = 4
+vim.o.tabstop = 4
 
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
