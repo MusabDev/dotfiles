@@ -426,6 +426,8 @@ require('lazy').setup({
       vim.keymap.set('n', '<leader>sr', builtin.resume, { desc = '[S]earch [R]esume' })
       vim.keymap.set('n', '<leader>s.', builtin.oldfiles, { desc = '[S]earch Recent Files ("." for repeat)' })
       vim.keymap.set('n', '<leader><leader>', builtin.buffers, { desc = '[ ] Find existing buffers' })
+      vim.keymap.set('v', '<leader>1f', vim.lsp.buf.format);
+
 
       -- Slightly advanced example of overriding default behavior and theme
       vim.keymap.set('n', '<leader>/', function()
@@ -893,6 +895,54 @@ require('lazy').setup({
     end,
   },
 
+  {
+    "olimorris/onedarkpro.nvim",
+    priority = 1000,
+  },
+  
+  {
+    "rose-pine/neovim",
+    name = "rose-pine",
+    priority = 1000,
+    config = function()
+      require('rose-pine').setup({
+        variant = "auto", -- auto, main, moon, or dawn
+        dark_variant = "main", -- main, moon, or dawn
+        dim_inactive_windows = false,
+        extend_background_behind_borders = true,
+
+        styles = {
+          bold = false,
+          italic = false,
+          transparency = false,
+        },
+      });
+
+    end
+  },
+
+  {
+    "vague2k/vague.nvim",
+    name = "vague",
+    config = function()
+      -- NOTE: you do not need to call setup if you don't want to.
+      require("vague").setup({
+        transparent = false, -- don't set background
+        style = {
+          strings = "none",
+          comments = "none"
+        }
+      })
+    end
+  },
+
+  -- Discord rich presence
+  {
+    'vyfor/cord.nvim',
+    build = ':Cord update',
+    -- opts = {}
+  },
+
   -- Highlight todo, notes, etc in comments
   { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
 
@@ -1028,7 +1078,7 @@ require('lazy').setup({
 })
 
 function ApplyColorScheme(color)
-  color = color or 'tokyonight-night'
+  color = color or 'kanagawa-dragon' or 'tokyonight-night'
 
   -- Load the colorscheme here.
   -- Like many other themes, this one has different styles, and you could load
