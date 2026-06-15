@@ -1,13 +1,24 @@
-font-family = "JetBrainsMono Nerd Font"
-font-size = 16
+font-family = "FiraCode Nerd Font"
+# font-family = "JetBrainsMono Nerd Font"
+font-size = 18
 
-window-title-font-family = "JetBrainsMono Nerd Font"
+window-title-font-family = "FiraCode Nerd Font"
+# window-title-font-family = "JetBrainsMono Nerd Font"
 
 shell-integration-features = no-cursor
 cursor-style = "block"
 cursor-style-blink = false
 
-# theme = "rose-pine"
+# theme = "Vague"
 theme = "Kanagawa Dragon"
+# theme = "Gruvbox Material Dark"
+# theme = "Rose Pine"
+# theme = "Everforest Dark Hard"
 window-theme = "auto"
 window-save-state = never
+
+# background = #000000
+
+# background-opacity = 0.90
+# background-blur = true
+
